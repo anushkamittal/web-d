@@ -1,0 +1,18 @@
+{
+    "manifest_version": 2,
+
+    "name": "color changer",
+    "description": "allow to change the background color",
+    "version": "1.0",
+
+    "browser_action":{
+        "default_title" : "hello"
+    },
+    "background":{
+        "scripts":["background.js"]
+    },
+    "permissions":[
+        "tabs" ,
+        "activeTab"
+    ]
+    }
