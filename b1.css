@@ -1,0 +1,37 @@
+.main {
+    padding : 65px;
+    text-align: center;
+    width : 50%;
+    margin : auto;
+    background-color: lightcyan;
+}
+.name {
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+button {
+    padding : 15px 30px;
+    background-color: blue;
+    border-radius: 10px;
+}
+.submi {
+    font-family: cursive;
+    font-size: 20px;
+}
+footer {
+    margin-left: 250px;
+}
+.last{
+    padding: 12px;
+    margin-left: 250px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 
+    'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.last2{
+    padding: 10px;
+}
+.last3{
+    padding: 10px 20px;
+    background-color: red;
+    border-radius: 10px;
+}
