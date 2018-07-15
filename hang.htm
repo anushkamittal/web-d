@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>hangman</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script>
+    <script src="hang.js"></script>
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+   
+</head>
+<body ng-app="Hangmanapp" ng-controller="gamecontroller" style="background-color: grey;">
+<div>
+
+    <div style="padding-left: 200px;">
+    <div style="width:800px; height: 55px; background-color:red; 
+    color:black; font-size: 40px; padding-left: 300px;">HANGMAN</div>
+    </div>
+
+    <div style="padding-left: 300px; padding-top: 40px;">
+            <div style="width:600px; height: 45px; background-color:red; 
+            color:black; font-size: 30px; padding-left: 70px;">Total Number Of Choices left :{{guess}}</div>
+    </div>
+
+    <div style="padding-top: 80px;">
+    <div style="float: right; padding-right:400px; ">
+    <i class="fa fa-thumbs-up" style="font-size: 58px; color: red;"></i>
+    </div>
+    <div style="padding-left:300px;">
+    <i class="fa fa-thumbs-down" style="font-size: 58px; color: red;"></i>
+    </div>
+    </div>
+
+    <div style="padding-right: 150px; padding-top: 35px;">
+    <div style="float: right; padding-top: 20px; 
+    width:300px; height:100px;  border:2px solid red; padding-left: 20px; font-size: 20px;">
+            correct guesses :: <span ng-repeat="letter in correctletterschosen">
+                    {{letter}}
+                </span>
+    </div>
+    </div>
+
+    <div style="padding-left: 60px;">
+            <div style=" padding-top: 20px; 
+            width:300px; height:100px;  border:2px solid red; padding-left: 20px; font-size: 20px;">
+            incorrect guesses :: <span ng-repeat="letter in incorrectletterschosen">
+                {{letter}}
+            </span>
+    </div>
+    </div>
+    
+    <div style="padding-top: 40px; padding-left:400px; 
+    font-size: 30px; ">your secret word is: {{displayword}}</div>
+
+    <div>
+
+        <div>
+            <div style="padding-left: 450px; padding-top: 20px; width: 100px;height: 40px;">
+            <input type="text" name="space" ng-model="input.letter">
+            </div>
+            <div style="padding-left:515px; padding-top: 30px;">
+            <button ng-click="letterchosen()"  style="width: 100px; height:50px; background-color: red;
+            color:black;">Submit</button>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+</body>
+</html>
